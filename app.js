@@ -1,5 +1,5 @@
 /* ==========================================================================
-   YOUNG INVESTORS ED - FINANCIAL LITERACY & INVESTMENT CHALLENGE 2026
+   YOUTH CAPITAL INITIATIVE - FINANCIAL LITERACY & INVESTMENT CHALLENGE 2026
    Full-featured interactive JS: Gate � Scroll-Reveal � Counters � Parallax
    Split-Flap � Particles � Charts � Simulator � FAQ � Confetti � Mobile Nav
    ========================================================================== */
@@ -14,7 +14,8 @@ let simChartInstance = null;
    1. COUNTDOWN TIMER
    ========================================================================= */
 function initCountdownTimer() {
-  var target = new Date('October 21, 2026 23:59:59').getTime();
+  // Target: October 31, 2026, 11:59 PM IST
+  var target = new Date('2026-10-31T23:59:00+05:30').getTime();
   function pad(n) { return n < 10 ? '0' + n : '' + n; }
   function update() {
     var diff = target - Date.now();
@@ -292,7 +293,7 @@ function initHeroChart() {
     options: {
       responsive: true, maintainAspectRatio: false,
       animation: { animateRotate: true, duration: 1400, easing: 'easeInOutQuart' },
-      plugins: { legend: { position: 'right', labels: { color: '#94A3B8', font: { family: 'Plus Jakarta Sans', size: 11 } } } },
+      plugins: { legend: { position: 'right', labels: { color: '#94A3B8', font: { family: "'Inter', 'Poppins', 'Montserrat', sans-serif", size: 11 } } } },
       cutout: '72%'
     }
   });
@@ -316,7 +317,7 @@ function initSimulatorChart() {
     },
     options: {
       responsive: true, maintainAspectRatio: false, animation: { duration: 400 },
-      plugins: { legend: { position: 'bottom', labels: { color: '#94A3B8', font: { family: 'Plus Jakarta Sans', size: 12 } } } },
+      plugins: { legend: { position: 'bottom', labels: { color: '#94A3B8', font: { family: "'Inter', 'Poppins', 'Montserrat', sans-serif", size: 12 } } } },
       cutout: '60%'
     }
   });
